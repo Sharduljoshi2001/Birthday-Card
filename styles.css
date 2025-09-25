@@ -1,0 +1,370 @@
+body {
+    text-align: center;
+    font-family: 'Happy Monkey', cursive;
+    /* Option 1: Harmonious birthday celebration colors with positioning */
+    background: linear-gradient(135deg, 
+        #a2d2ff 0%, 
+        #b8a7ff 25%, 
+        #EFB0C9 60%, 
+        #ffb3d9 100%);
+    
+    /* Option 2: Warm celebration palette - uncomment to try */
+    /* background: linear-gradient(to bottom right,
+        #ff9a9e 0%,
+        #fecfef 25%,
+        #fecfef 50%,
+        #ffd89b 100%); */
+    
+    /* Option 3: Radial gradient alternative - uncomment to try */
+    /* background: radial-gradient(ellipse at center,
+        #a2d2ff 0%,
+        #c8a8ff 30%,
+        #EFB0C9 70%,
+        #ff99cc 100%); */
+    
+    color: #ffffff;
+}
+
+/* Enhanced Typography */
+h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 1.2;
+    text-shadow: 
+        0 2px 4px rgba(0, 0, 0, 0.3),
+        0 0 20px rgba(255, 255, 255, 0.2);
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.8em;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    line-height: 1.3;
+    text-shadow: 
+        0 1px 3px rgba(0, 0, 0, 0.4),
+        0 0 15px rgba(255, 255, 255, 0.15);
+    margin: 15px 0;
+}
+
+h3 {
+    font-size: 1.2em;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+    line-height: 1.4;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    opacity: 0.9;
+}
+
+h4 {
+    font-size: 1.1em;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+p {
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.6;
+    letter-spacing: 0.2px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+#bff-img {
+    width: 150px;
+    border-radius: 50%;
+    border: 6px solid #EFB0C9;
+    margin-bottom: 10px;
+    animation: float 3s ease-in-out infinite;
+    box-shadow: 
+        0 0 20px rgba(239, 176, 201, 0.4),
+        0 0 40px rgba(239, 176, 201, 0.2),
+        0 8px 25px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+#bff-img:hover {
+    transform: scale(1.1);
+    box-shadow: 
+        0 0 30px rgba(239, 176, 201, 0.6),
+        0 0 60px rgba(239, 176, 201, 0.4),
+        0 0 90px rgba(255, 255, 255, 0.2),
+        0 12px 35px rgba(0, 0, 0, 0.3);
+}
+
+/* Floating animation keyframes */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0) rotate(0deg);
+    }
+    25% {
+        transform: translateY(-8px) rotate(1deg);
+    }
+    50% {
+        transform: translateY(-5px) rotate(0deg);
+    }
+    75% {
+        transform: translateY(-8px) rotate(-1deg);
+    }
+}
+
+#bday-age {
+    background: linear-gradient(45deg, #EFB0C9, #ffb3d9);
+    padding: 12px 20px;
+    border-radius: 25px;
+    margin: 15px 0;
+    font-size: 1.3em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 
+        0 4px 15px rgba(239, 176, 201, 0.3),
+        0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+#bday-age:hover {
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 
+        0 6px 20px rgba(239, 176, 201, 0.4),
+        0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+#bday-date {
+    margin: 10px 0 0 0;
+    background: linear-gradient(45deg, #b8a7ff, #a2d2ff);
+    padding: 10px 18px;
+    border-radius: 20px;
+    font-size: 1.1em;
+    font-weight: 500;
+    letter-spacing: 0.8px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 
+        0 3px 12px rgba(184, 167, 255, 0.3),
+        0 1px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+#bday-date:hover {
+    transform: translateY(-1px) scale(1.03);
+    box-shadow: 
+        0 4px 15px rgba(184, 167, 255, 0.4),
+        0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+#header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 40px 30px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.gift-section {
+    margin: 50px auto 30px;
+    max-width: 500px;
+    padding: 30px 25px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+    box-shadow: 
+        0 8px 32px rgba(0, 0, 0, 0.2),
+        0 2px 16px rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+.gift-section:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 
+        0 15px 40px rgba(0, 0, 0, 0.25),
+        0 5px 20px rgba(255, 255, 255, 0.15);
+}
+
+.gift-title {
+    margin-bottom: 15px;
+    font-size: 1.6em;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    text-shadow: 
+        0 2px 4px rgba(0, 0, 0, 0.4),
+        0 0 20px rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.gift-section:hover .gift-title {
+    text-shadow: 
+        0 2px 4px rgba(0, 0, 0, 0.4),
+        0 0 25px rgba(96, 47, 47, 0.3);
+    transform: translateY(-10px);
+}
+
+.gift-hint {
+    margin-top: 0;
+    font-size: 1em;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+    opacity: 0.85;
+    font-style: italic;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+#gift-img-cheers {
+    height: 200px;
+}
+
+.gift-img {
+    margin: 25px auto 15px;
+    max-width: 400px;
+    height: 350px;
+    border: 4px solid rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    background-image: url("images/gift-cover.jpg");
+    background-size: cover;
+    background-position: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.gift-img:hover {
+    transform: scale(1.03);
+    border-color: rgba(255, 255, 255, 1);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+#gift-img-happy:hover {
+    background-image: url("images/happy.gif");
+}
+
+#gift-img-hot:hover {
+    background-image: url("images/hot.gif");
+}
+
+#gift-img-genius:hover {
+    background-image: url("images/genius.gif");
+}
+
+#gift-img-badass:hover {
+    background-image: url("images/badass.gif");
+}
+
+#gift-img-cheers:hover {
+    background-image: url("images/cheers.gif");
+}
+
+#footer {
+    font-style: italic;
+    width: 400px;
+    margin: 40px auto 20px;
+}
+
+a {
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .gift-section {
+        margin: 30px 20px;
+        padding: 25px 20px;
+        max-width: none;
+    }
+    
+    .gift-img {
+        height: 280px;
+        max-width: 100%;
+    }
+    
+    #header {
+        margin: 20px;
+        padding: 30px 25px;
+    }
+    
+    #footer {
+        width: 90%;
+        margin: 30px auto 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.2em;
+        letter-spacing: 0.8px;
+    }
+    
+    h2 {
+        font-size: 1.6em;
+    }
+    
+    .gift-title {
+        font-size: 1.4em;
+        letter-spacing: 0.6px;
+    }
+    
+    #bday-age {
+        font-size: 1.2em;
+        padding: 10px 16px;
+    }
+    
+    #bday-date {
+        font-size: 1em;
+        padding: 8px 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .gift-section {
+        padding: 20px 15px;
+        margin: 25px 15px;
+    }
+    
+    .gift-img {
+        height: 250px;
+    }
+    
+    #header {
+        padding: 25px 20px;
+        margin: 15px;
+    }
+    
+    h1 {
+        font-size: 1.9em;
+        letter-spacing: 0.5px;
+        line-height: 1.1;
+    }
+    
+    h2 {
+        font-size: 1.4em;
+    }
+    
+    .gift-title {
+        font-size: 1.3em;
+        letter-spacing: 0.4px;
+    }
+    
+    .gift-hint {
+        font-size: 0.9em;
+    }
+    
+    #bday-age {
+        font-size: 1.1em;
+        padding: 8px 14px;
+        letter-spacing: 0.8px;
+    }
+    
+    #bday-date {
+        font-size: 0.95em;
+        padding: 6px 12px;
+        letter-spacing: 0.6px;
+    }
+}
+
